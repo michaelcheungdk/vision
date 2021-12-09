@@ -30,6 +30,7 @@ If you want to spin up a container on the host's network namespace.
 `$ kubectl run tmp-shell --rm -i --tty --overrides='{"spec": {"hostNetwork": true}}'  --image michaelcheungdk/vision  -- /bin/bash`
 
 If you want to debug a container with the same `network`  namespace for debugging.
+
 `$ kubectl debug $podname -n $namespace  -it --copy-to=debugger --image=michaelcheungdk/vision -- /bin/bash`
 
 **Network Problems** 
