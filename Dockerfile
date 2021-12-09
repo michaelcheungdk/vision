@@ -45,6 +45,7 @@ RUN set -ex \
     iputils \
     ipvsadm \
     jq \
+    linux-tools \
     mtr \
     openssl \
     strace \
